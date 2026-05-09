@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub热门项目｜05.09</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px}
+    .project-card h2{font-size:28px;margin:0 0 12px}
+    .project-card p{max-width:none}
+    .project-index{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7C7C77;margin:0 0 10px}
+    .trend-list{padding-left:22px;max-width:760px}
+    .trend-list li{margin:12px 0}
+    .source-list li{margin:8px 0}
+  </style>
+</head>
+<body>
+  <div class="page-fade"></div>
+  <div class="container article">
+    <p class="back-link reveal"><a href="../index.html">← 返回首页</a></p>
+    <header class="article-header">
+      <p class="eyebrow reveal">GitHub热门项目</p>
+      <h1 class="focus-title char-title"><span>G</span><span>i</span><span>t</span><span>H</span><span>u</span><span>b</span><span>热</span><span>门</span><span>项</span><span>目</span><span>｜</span><span>0</span><span>5</span><span>.</span><span>0</span><span>9</span></h1>
+      <p class="lead reveal quote-like">每日 Top 5</p>
+      <p class="article-meta reveal">自动归档页面 · warm / humanistic / editorial 风格</p>
+    </header>
+
+    <section class="article-section reveal">
+      <h1>GitHub热门项目｜05.09</h1>
+      <p>今天这份 GitHub 热门项目日报，最值得关注的变化不是某个项目单点爆火，而是热门仓库里“AI 代理工程化”正在继续升温：一部分项目在补齐 coding agent 的工程纪律，一部分项目在补齐 research / inference / terminal interface 这些真实使用链路。今天选出的 5 个项目，覆盖了垂直行业 agent、工程方法论、终端交互、推理加速与本地研究五条线，基本代表了今天最值得跟进的开源方向。</p>
+    </section>
+
+    <section class="article-section">
+      <h2>一、今日最值得关注的 5 个项目</h2>
+      <div class="project-grid stagger-list">
+        <article class="panel project-card reveal">
+          <p class="project-index">TOP 1</p>
+          <h2><a href="https://github.com/anthropics/financial-services" target="_blank" rel="noopener noreferrer">anthropics/financial-services</a></h2>
+          <p><strong>一句话定位</strong>：面向金融服务场景的 AI agent 工作流与参考实现集合。</p>
+          <p><strong>为什么今天值得关注</strong>：它出现在 Trending 前列，说明垂直行业 agent 依然是社区的高关注方向。更重要的是，金融是高合规、高审计要求行业，这类项目的热度比一般 demo 更能反映“AI 真正进业务流程”的信号。</p>
+          <p><strong>技术 / 产品看点</strong>：项目名称本身就指向金融服务流程封装，适合观察 Anthropic 如何把 agent 能力映射到受监管行业的任务链条中。</p>
+          <p><strong>简短判断</strong>：行业 agent 的下一阶段，不是更会回答问题，而是更会嵌入流程、留下审计边界、接受人工签核。</p>
+        </article>
+        <article class="panel project-card reveal">
+          <p class="project-index">TOP 2</p>
+          <h2><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener noreferrer">addyosmani/agent-skills</a></h2>
+          <p><strong>一句话定位</strong>：为 AI coding agents 提供 production-grade engineering skills 的工程技能库。</p>
+          <p><strong>为什么今天值得关注</strong>：它持续处在高热位置，说明社区开始越来越认真地面对同一个问题：代码代理真正难的不是“写出代码”，而是“按工程规范完成交付”。</p>
+          <p><strong>技术 / 产品看点</strong>：从仓库公开描述可确认，它强调的是 production-grade engineering skills，而不是零散 prompt；这意味着它更接近可复用的工程方法库。</p>
+          <p><strong>简短判断</strong>：2026 年 coding agent 的分水岭，会越来越取决于 workflow design、验证机制和工程纪律，而不是单轮生成效果。</p>
+        </article>
+        <article class="panel project-card reveal">
+          <p class="project-index">TOP 3</p>
+          <h2><a href="https://github.com/Hmbown/DeepSeek-TUI" target="_blank" rel="noopener noreferrer">Hmbown/DeepSeek-TUI</a></h2>
+          <p><strong>一句话定位</strong>：运行在终端里的 DeepSeek 模型 coding agent。</p>
+          <p><strong>为什么今天值得关注</strong>：终端形态的 coding agent 继续走热，说明很多开发者仍然偏好“本地、轻量、可控”的交互方式，而不是完全依赖浏览器或闭源 IDE 内嵌体验。</p>
+          <p><strong>技术 / 产品看点</strong>：从公开描述看，它直接把 DeepSeek 模型能力包装成 terminal-native coding agent，这类产品特别适合工程师高频、低延迟、键盘驱动的日常开发流。</p>
+          <p><strong>简短判断</strong>：未来能留下来的开发代理，未必是界面最花哨的，而是最贴近开发者原生工作台的。</p>
+        </article>
+        <article class="panel project-card reveal">
+          <p class="project-index">TOP 4</p>
+          <h2><a href="https://github.com/z-lab/dflash" target="_blank" rel="noopener noreferrer">z-lab/dflash</a></h2>
+          <p><strong>一句话定位</strong>：围绕 Flash Speculative Decoding 的大模型推理加速方案。</p>
+          <p><strong>为什么今天值得关注</strong>：当模型能力差距缩小时，推理效率重新成为开源社区最务实的战场。它今天上榜，说明“性能红利”仍然是非常强的共识主题。</p>
+          <p><strong>技术 / 产品看点</strong>：从仓库公开描述可确认，其核心方向是 Block Diffusion for Flash Speculative Decoding，属于把论文思路往工程加速价值推进的一类项目。</p>
+          <p><strong>简短判断</strong>：推理优化不会是过渡性热点，而会长期占据热门榜，因为它直接决定产品成本、速度与可部署性。</p>
+        </article>
+        <article class="panel project-card reveal">
+          <p class="project-index">TOP 5</p>
+          <h2><a href="https://github.com/LearningCircuit/local-deep-research" target="_blank" rel="noopener noreferrer">LearningCircuit/local-deep-research</a></h2>
+          <p><strong>一句话定位</strong>：支持本地与云端模型、强调本地可控与加密存储的深度研究助手。</p>
+          <p><strong>为什么今天值得关注</strong>：它同时踩中了两个真实需求：一是 deep research 从演示功能走向高频工具，二是用户越来越在意研究资料、私有文档与过程数据不外流。</p>
+          <p><strong>技术 / 产品看点</strong>：根据仓库公开描述，它支持多类搜索源、本地与云端 LLM、私有文档接入以及本地加密，产品形态更像研究工作台，而不是一次性问答页面。</p>
+          <p><strong>简短判断</strong>：研究型 AI 产品的竞争，正在从“能不能搜”转向“能不能长期沉淀、管理并保护研究资产”。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="article-section">
+      <h2>二、今日技术趋势判断</h2>
+      <ul class="trend-list stagger-list">
+        <li><strong>今天 GitHub 热门项目里最明显的主线，是 AI agent 正在从“能力展示”进入“工作流交付”。</strong></li>
+        <li><strong>终端代理、本地研究与推理优化同时走热，说明开发者重新把注意力放回速度、掌控感和部署现实。</strong></li>
+        <li><strong>行业化 agent 与工程化 skill 库并行升温，意味着 2026 年开源生态正在补齐“从模型到生产”的中间层。</strong></li>
+      </ul>
+    </section>
+
+    <section class="article-section">
+      <h2>三、一句结论</h2>
+      <p><strong>今天真正值得追的，不是又一个会说话的 AI 外壳，而是那些把智能体接进真实工程流程、真实性能约束和真实业务场景的项目。</strong></p>
+      <hr class="sep" />
+      <h2>来源备注</h2>
+      <ul class="source-list">
+        <li><a href="https://github.com/trending">GitHub Trending</a></li>
+        <li><a href="https://github.com/anthropics/financial-services">anthropics/financial-services</a></li>
+        <li><a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a></li>
+        <li><a href="https://github.com/Hmbown/DeepSeek-TUI">Hmbown/DeepSeek-TUI</a></li>
+        <li><a href="https://github.com/z-lab/dflash">z-lab/dflash</a></li>
+        <li><a href="https://github.com/LearningCircuit/local-deep-research">LearningCircuit/local-deep-research</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
