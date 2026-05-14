@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub热门项目｜05.14</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px}
+    .project-card h2{font-size:28px;margin:0 0 12px}
+    .project-card p{max-width:none}
+    .project-index{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7C7C77;margin:0 0 10px}
+    .trend-list{padding-left:22px;max-width:760px}
+    .trend-list li{margin:12px 0}
+  </style>
+</head>
+<body>
+  <div class="page-fade"></div>
+  <div class="container article">
+    <p class="back-link reveal"><a href="../index.html">← 返回首页</a></p>
+    <header class="article-header">
+      <p class="eyebrow reveal">GitHub热门项目</p>
+      <h1 class="focus-title char-title"><span>G</span><span>i</span><span>t</span><span>H</span><span>u</span><span>b</span><span>热</span><span>门</span><span>项</span><span>目</span><span>｜</span><span>0</span><span>5</span><span>.</span><span>1</span><span>4</span></h1>
+      <p class="lead reveal quote-like">每日 Top 5</p>
+      <p class="article-meta reveal">归档日期：2026-05-14 · warm / humanistic / editorial</p>
+    </header>
+
+    <section class="article-section reveal">
+      <h1>GitHub热门项目｜05.14</h1>
+      <p>今天这份 GitHub 热门项目日报，最值得看的不是“谁上榜”本身，而是这些仓库共同指向了同一条线：AI 开发正在快速补齐真正可长期协作的基础层。今天挑出的 5 个项目，分别落在个人 AI、记忆层、技能层、代码诊断和规格驱动开发上，基本代表了当下最值得持续跟踪的方向。</p>
+    </section>
+
+    <section class="article-section">
+      <h2>一、今日最值得关注的 5 个项目</h2>
+      <div class="project-grid stagger-list"><article class="panel project-card reveal">
+        <p class="project-index">TOP 1</p>
+        <h2><a href="https://github.com/tinyhumansai/openhuman" target="_blank" rel="noopener noreferrer">tinyhumansai/openhuman</a></h2>
+        <p><strong>一句话定位</strong>：面向个人场景的私有化 AI 助手框架，强调本地优先、简单体验与较强能力。</p>
+        <p><strong>为什么今天值得关注</strong>：它今天值得看，不只是因为 AI 助手题材还热，而是因为“个人 AI 系统”正在从云端聊天工具转向更可控的本地产品形态。openhuman 的上升，说明市场仍在寻找真正属于个人而不是平台的 AI 入口。</p>
+        <p><strong>技术 / 产品看点</strong>：Rust 技术栈、本地优先、产品叙事直接围绕 private / simple / powerful 展开，属于把性能、隐私和可用性绑在一起的路线。</p>
+        <p><strong>简短判断</strong>：个人 AI 赛道后面真正能留下来的项目，大概率都得把“可控”放在“更强”前面。</p>
+        <p><strong>语言</strong>：Rust · <strong>当日热度观察</strong>：1,696 stars today</p>
+      </article><article class="panel project-card reveal">
+        <p class="project-index">TOP 2</p>
+        <h2><a href="https://github.com/rohitg00/agentmemory" target="_blank" rel="noopener noreferrer">rohitg00/agentmemory</a></h2>
+        <p><strong>一句话定位</strong>：给 AI coding agents 提供持久记忆能力的基础组件。</p>
+        <p><strong>为什么今天值得关注</strong>：当下 agent 的真正瓶颈，越来越不是一次任务做得好不好，而是能不能跨任务连续工作。这个项目持续被关注，说明社区已经在补长期记忆这块关键短板。</p>
+        <p><strong>技术 / 产品看点</strong>：直接面向 coding agent 场景，不做泛化叙事，而是强调在真实工程环境里让代理保留上下文、习惯和历史。</p>
+        <p><strong>简短判断</strong>：如果 agent 进入长期协作阶段，记忆层会像数据库、中间件一样成为标配基础设施。</p>
+        <p><strong>语言</strong>：TypeScript · <strong>当日热度观察</strong>：1,379 stars today</p>
+      </article><article class="panel project-card reveal">
+        <p class="project-index">TOP 3</p>
+        <h2><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener noreferrer">mattpocock/skills</a></h2>
+        <p><strong>一句话定位</strong>：把高频开发任务封装成可复用的 agent skills 与工程方法目录。</p>
+        <p><strong>为什么今天值得关注</strong>：它持续热门，代表开发者的关注点正在从“让模型写代码”转向“让模型按照工程方法稳定做事”。这不是更花哨的 prompt，而是更像团队作业规范。</p>
+        <p><strong>技术 / 产品看点</strong>：技能目录化、任务模式化、经验显性化，核心价值是复用工程实践，而不是单次生成结果。</p>
+        <p><strong>简短判断</strong>：未来 coding agent 的差异，不只在模型本身，更在背后这套可复制的技能层。</p>
+        <p><strong>语言</strong>：Shell · <strong>当日热度观察</strong>：3,392 stars today</p>
+      </article><article class="panel project-card reveal">
+        <p class="project-index">TOP 4</p>
+        <h2><a href="https://github.com/millionco/react-doctor" target="_blank" rel="noopener noreferrer">millionco/react-doctor</a></h2>
+        <p><strong>一句话定位</strong>：专门识别 React 代码问题、尤其适合检查 AI 生成前端代码质量的诊断工具。</p>
+        <p><strong>为什么今天值得关注</strong>：前端开发进入 AI 辅助时代后，问题已经从“写得快不快”转成“写完能不能用、能不能维护”。react-doctor 的热度，很像这个需求被正式看见的信号。</p>
+        <p><strong>技术 / 产品看点</strong>：它不是传统 lint 的平替，而是对 React 场景里的 agent 生成代码做更有针对性的诊断，明显更贴近 AI-native 开发流。</p>
+        <p><strong>简短判断</strong>：AI 写代码普及之后，代码体检工具会成为另一条独立热门赛道。</p>
+        <p><strong>语言</strong>：TypeScript · <strong>当日热度观察</strong>：604 stars today</p>
+      </article><article class="panel project-card reveal">
+        <p class="project-index">TOP 5</p>
+        <h2><a href="https://github.com/github/spec-kit" target="_blank" rel="noopener noreferrer">github/spec-kit</a></h2>
+        <p><strong>一句话定位</strong>：GitHub 推出的 Spec-Driven Development 入门工具包，帮助团队把规格驱动开发方法落到实际流程中。</p>
+        <p><strong>为什么今天值得关注</strong>：这个项目值得关注，是因为它来自 GitHub 官方，而且热度说明“先写规格、再做实现”正在被重新强调。越是 agent 参与开发，越需要更清晰的规格边界来约束执行。</p>
+        <p><strong>技术 / 产品看点</strong>：官方出手推动 spec-driven development，本质上是在给 AI 协作开发建立更标准化的输入层。</p>
+        <p><strong>简短判断</strong>：接下来很多团队不会先问“用哪个 agent”，而会先问“我们有没有足够清晰的 spec 能交给 agent”。</p>
+        <p><strong>语言</strong>：Python · <strong>当日热度观察</strong>：1,120 stars today</p>
+      </article></div>
+    </section>
+
+    <section class="article-section">
+      <h2>二、今日技术趋势判断</h2>
+      <ul class="trend-list stagger-list"><li>今天最明显的趋势，是 GitHub 热门项目正在把 AI 开发的重心从“模型更强”转向“流程更稳”——记忆、技能、规格、诊断都在升温。</li><li>第二个趋势是个人 AI 与本地优先路线继续抬头，用户越来越在意控制权、隐私和长期可用性。</li><li>第三个趋势是官方方法论开始进入热门视野，说明 agent 时代的软件工程，正在重新重视 spec 和 discipline。</li></ul>
+    </section>
+
+    <section class="article-section">
+      <h2>三、一句结论</h2>
+      <p><strong>今天最值得看的，不是某一个更炫的仓库，而是 GitHub 热门榜已经越来越清楚地指向同一件事：AI 开发正在从“会生成”迈向“能协作、能约束、能长期工作”。</strong></p>
+      <hr class="sep" />
+      <h2>来源备注</h2>
+      <ul class="source-list">
+        <li><a href="https://github.com/trending">GitHub Trending</a></li>
+        <li><a href="https://github.com/tinyhumansai/openhuman">tinyhumansai/openhuman</a></li><li><a href="https://github.com/rohitg00/agentmemory">rohitg00/agentmemory</a></li><li><a href="https://github.com/mattpocock/skills">mattpocock/skills</a></li><li><a href="https://github.com/millionco/react-doctor">millionco/react-doctor</a></li><li><a href="https://github.com/github/spec-kit">github/spec-kit</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
