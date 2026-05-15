@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub热门项目｜05.15</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px}
+    .project-card h2{font-size:28px;margin:0 0 12px}
+    .project-card p{max-width:none}
+    .project-index{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7C7C77;margin:0 0 10px}
+    .trend-list{padding-left:22px;max-width:760px}
+    .trend-list li{margin:12px 0}
+  </style>
+</head>
+<body>
+  <div class="page-fade"></div>
+  <div class="container article">
+    <p class="back-link reveal"><a href="../index.html">← 返回首页</a></p>
+    <header class="article-header">
+      <p class="eyebrow reveal">GitHub热门项目</p>
+      <h1 class="focus-title char-title"><span>G</span><span>i</span><span>t</span><span>H</span><span>u</span><span>b</span><span>热</span><span>门</span><span>项</span><span>目</span><span>｜</span><span>0</span><span>5</span><span>.</span><span>1</span><span>5</span></h1>
+      <p class="lead reveal quote-like">每日 Top 5</p>
+      <p class="article-meta reveal">归档日期：2026-05-15 · warm / humanistic / editorial</p>
+    </header>
+    <section class="article-section reveal">
+      <h1>GitHub热门项目｜05.15</h1>
+      <p>今天这份 GitHub 热门项目日报，真正值得看的不是单个仓库冲上热榜，而是热门项目的重心正在继续从“模型能力秀肌肉”转向“AI 开发基础设施补齐”。今天选出的 5 个项目，分别落在空间感知、个人 AI、长期记忆、端侧语音和规格驱动开发五个方向，它们共同指向一个趋势：下一阶段最有价值的项目，不只是更聪明，而是更可部署、更可协作、也更贴近真实场景。</p>
+    </section>
+    <section class="article-section">
+      <h2>一、今日最值得关注的 5 个项目</h2>
+      <div class="project-grid stagger-list"><article class="panel project-card reveal"><p class="project-index">TOP 1</p><h2><a href="https://github.com/ruvnet/RuView" target="_blank" rel="noopener noreferrer">ruvnet/RuView</a></h2><p><strong>一句话定位</strong>：把普通 WiFi 信号转成空间感知、生命体征监测和存在检测能力的边缘感知平台。</p><p><strong>为什么今天值得关注</strong>：它今天最吸引人的地方，不是“炫技式黑科技”，而是把 WiFi sensing 这件事从研究论文往可落地平台推进了一步。热门榜上很少出现这种同时覆盖硬件、边缘 AI 和隐私叙事的项目。</p><p><strong>技术 / 产品看点</strong>：基于 ESP32 与 CSI（Channel State Information），支持 presence、breathing、heart rate、through-wall sensing 等场景；强调 edge-first、no camera、no cloud，对隐私敏感环境很有现实吸引力。</p><p><strong>简短判断</strong>：如果它后续能把精度和部署门槛继续压下来，WiFi 感知会成为智能空间里很值得追踪的一条旁路线。</p></article><article class="panel project-card reveal"><p class="project-index">TOP 2</p><h2><a href="https://github.com/tinyhumansai/openhuman" target="_blank" rel="noopener noreferrer">tinyhumansai/openhuman</a></h2><p><strong>一句话定位</strong>：面向个人生活与工作场景的本地优先 agentic assistant。</p><p><strong>为什么今天值得关注</strong>：个人 AI 助手赛道并没有降温，只是大家开始重新定义“真正可用”。OpenHuman 今天继续受关注，说明市场对“属于个人、持续陪伴、具备长期上下文”的 AI 入口还在找答案。</p><p><strong>技术 / 产品看点</strong>：UI-first、118+ integrations、自动抓取上下文、Memory Tree、本地 SQLite 与 Obsidian-compatible vault，把“个人记忆系统 + agent 工具箱”打成一体。</p><p><strong>简短判断</strong>：这类项目最终拼的不会只是模型，而是谁更早把“个人上下文操作系统”做顺。</p></article><article class="panel project-card reveal"><p class="project-index">TOP 3</p><h2><a href="https://github.com/rohitg00/agentmemory" target="_blank" rel="noopener noreferrer">rohitg00/agentmemory</a></h2><p><strong>一句话定位</strong>：给 AI coding agents 提供可持续、可检索、跨会话共享的记忆层。</p><p><strong>为什么今天值得关注</strong>：当下 agent 最大的问题已经不是单轮能不能答对，而是隔天还能不能接着干。agentmemory 持续热门，说明“长期记忆层”正在从增强功能变成基础设施。</p><p><strong>技术 / 产品看点</strong>：支持多种 agent、MCP/REST/Hook 接入、BM25 + vector + graph 混合检索、4-tier memory consolidation，还强调低 token 成本与跨代理共享。</p><p><strong>简短判断</strong>：未来 agent 工程化能力的分水岭，很可能就在有没有一层靠谱的 memory substrate。</p></article><article class="panel project-card reveal"><p class="project-index">TOP 4</p><h2><a href="https://github.com/supertone-inc/supertonic" target="_blank" rel="noopener noreferrer">supertone-inc/supertonic</a></h2><p><strong>一句话定位</strong>：轻量、快速、可端侧运行的多语言 TTS 系统。</p><p><strong>为什么今天值得关注</strong>：端侧语音能力正在重新升温，尤其是浏览器、本地应用和轻硬件场景。Supertonic 受关注，说明市场对“无需云端、低延迟、够自然”的语音底座需求在变强。</p><p><strong>技术 / 产品看点</strong>：基于 ONNX Runtime，本地推理，31 种语言支持，强调低内存、轻模型尺寸与多端部署；浏览器、Node、Rust、移动端示例齐全。</p><p><strong>简短判断</strong>：语音交互下一阶段的关键不是更像人，而是先足够便宜、稳定、随处可跑。</p></article><article class="panel project-card reveal"><p class="project-index">TOP 5</p><h2><a href="https://github.com/github/spec-kit" target="_blank" rel="noopener noreferrer">github/spec-kit</a></h2><p><strong>一句话定位</strong>：帮助团队把 Spec-Driven Development 真正落进研发流程的官方工具包。</p><p><strong>为什么今天值得关注</strong>：它不是新奇项目，但今天值得看，是因为 GitHub 官方在持续把“规格先行”这件事推向更主流的位置。agent 参与开发越多，输入规格的质量就越决定输出质量。</p><p><strong>技术 / 产品看点</strong>：围绕 constitution、specify、plan、tasks、implement 形成完整链路，支持多种 AI coding agent 集成，把规格、计划和执行连接成一条工程路径。</p><p><strong>简短判断</strong>：越往后，团队的竞争力会越来越体现在能否把需求表达成可执行规格，而不是只会写 prompt。</p></article></div>
+    </section>
+    <section class="article-section">
+      <h2>二、今日技术趋势判断</h2>
+      <ul class="trend-list stagger-list"><li>今天最明显的趋势，是 AI 热门项目继续往“基础设施层”下沉：memory、spec、voice runtime、sensor interface 都比单纯大模型包装更受关注。</li><li>第二个趋势是本地优先和端侧部署继续升温。无论是个人 AI、端侧 TTS，还是边缘感知，大家都在追求更低延迟、更强控制权和更少云依赖。</li><li>第三个趋势是 agent 工程化正在进入更细分阶段：长期记忆、规格驱动、上下文自动化，正在替代早期那种“先让模型能写点代码”的粗放式探索。</li></ul>
+    </section>
+    <section class="article-section">
+      <h2>三、一句结论</h2>
+      <p><strong>今天 GitHub 热门项目最值得记住的一点是：AI 正在从“展示能力”走向“建设系统”，下一轮真正能留下来的项目，会更像基础设施，而不是演示样品。</strong></p>
+      <hr class="sep" />
+      <h2>来源备注</h2>
+      <ul class="source-list"><li><a href="https://github.com/trending">https://github.com/trending</a></li><li><a href="https://github.com/ruvnet/RuView">https://github.com/ruvnet/RuView</a></li><li><a href="https://github.com/tinyhumansai/openhuman">https://github.com/tinyhumansai/openhuman</a></li><li><a href="https://github.com/rohitg00/agentmemory">https://github.com/rohitg00/agentmemory</a></li><li><a href="https://github.com/supertone-inc/supertonic">https://github.com/supertone-inc/supertonic</a></li><li><a href="https://github.com/github/spec-kit">https://github.com/github/spec-kit</a></li></ul>
+    </section>
+  </div>
+</body>
+</html>
